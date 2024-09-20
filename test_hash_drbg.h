@@ -14,6 +14,30 @@
 #endif
 
 /**************************************************
+* Name: test_sha224_hash_drbg_without_prediction_resistance
+* Function: evaluate Hash_DRBG output based on SHA-224
+* Return value:
+    0:                function executes successfully
+    any other value:  an error occurs
+* Notes:
+  Test data are excerpted from the document provided by NIST.
+  See test_data_1.txt for details.
+**************************************************/
+int test_sha224_hash_drbg_without_prediction_resistance(void);
+
+/**************************************************
+* Name: test_sha224_hash_drbg_with_prediction_resistance
+* Function: evaluate Hash_DRBG output based on SHA-224
+* Return value:
+    0:                function executes successfully
+    any other value:  an error occurs
+* Notes:
+  Test data are excerpted from the document provided by NIST.
+  See test_data_2.txt for details.
+**************************************************/
+int test_sha224_hash_drbg_with_prediction_resistance(void);
+
+/**************************************************
 * Name: test_sha256_hash_drbg_without_prediction_resistance
 * Function: evaluate Hash_DRBG output based on SHA-256
 * Return value:
@@ -21,7 +45,7 @@
     any other value:  an error occurs
 * Notes:
   Test data are excerpted from the document provided by NIST.
-  See test_data_1.txt for details.
+  See test_data_3.txt for details.
 **************************************************/
 int test_sha256_hash_drbg_without_prediction_resistance(void);
 
@@ -33,9 +57,33 @@ int test_sha256_hash_drbg_without_prediction_resistance(void);
     any other value:  an error occurs
 * Notes:
   Test data are excerpted from the document provided by NIST.
-  See test_data_2.txt for details.
+  See test_data_4.txt for details.
 **************************************************/
 int test_sha256_hash_drbg_with_prediction_resistance(void);
+
+/**************************************************
+* Name: test_sha384_hash_drbg_without_prediction_resistance
+* Function: evaluate Hash_DRBG output based on SHA-384
+* Return value:
+    0:                function executes successfully
+    any other value:  an error occurs
+* Notes:
+  Test data are excerpted from the document provided by NIST.
+  See test_data_5.txt for details.
+**************************************************/
+int test_sha384_hash_drbg_without_prediction_resistance(void);
+
+/**************************************************
+* Name: test_sha384_hash_drbg_with_prediction_resistance
+* Function: evaluate Hash_DRBG output based on SHA-384
+* Return value:
+    0:                function executes successfully
+    any other value:  an error occurs
+* Notes:
+  Test data are excerpted from the document provided by NIST.
+  See test_data_6.txt for details.
+**************************************************/
+int test_sha384_hash_drbg_with_prediction_resistance(void);
 
 /**************************************************
 * Name: test_sha512_hash_drbg_without_prediction_resistance
@@ -45,7 +93,7 @@ int test_sha256_hash_drbg_with_prediction_resistance(void);
     any other value:  an error occurs
 * Notes:
   Test data are excerpted from the document provided by NIST.
-  See test_data_3.txt for details.
+  See test_data_7.txt for details.
 **************************************************/
 int test_sha512_hash_drbg_without_prediction_resistance(void);
 
@@ -57,7 +105,7 @@ int test_sha512_hash_drbg_without_prediction_resistance(void);
     any other value:  an error occurs
 * Notes:
   Test data are excerpted from the document provided by NIST.
-  See test_data_4.txt for details.
+  See test_data_8.txt for details.
 **************************************************/
 int test_sha512_hash_drbg_with_prediction_resistance(void);
 

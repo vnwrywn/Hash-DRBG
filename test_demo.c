@@ -15,6 +15,26 @@ int main(void)
     int error_code;
 
     printf("\n*******************************************\n");
+    printf("Test SHA-224 Hash DRBG without prediction resistance:\n");
+    if ( error_code = test_sha224_hash_drbg_without_prediction_resistance() )
+    {
+        printf("Generating random bytes test failed!\n");
+        printf("Error code: 0x%x", error_code);
+        return error_code;
+    }
+    printf("Generating random bytes test succeeded!\n");
+
+    printf("\n*******************************************\n");
+    printf("Test SHA-224 Hash DRBG with prediction resistance:\n");
+    if ( error_code = test_sha224_hash_drbg_with_prediction_resistance() )
+    {
+        printf("Generating random bytes test failed!\n");
+        printf("Error code: 0x%x", error_code);
+        return error_code;
+    }
+    printf("Generating random bytes test succeeded!\n");
+
+    printf("\n*******************************************\n");
     printf("Test SHA-256 Hash DRBG without prediction resistance:\n");
     if ( error_code = test_sha256_hash_drbg_without_prediction_resistance() )
     {
@@ -27,6 +47,26 @@ int main(void)
     printf("\n*******************************************\n");
     printf("Test SHA-256 Hash DRBG with prediction resistance:\n");
     if ( error_code = test_sha256_hash_drbg_with_prediction_resistance() )
+    {
+        printf("Generating random bytes test failed!\n");
+        printf("Error code: 0x%x", error_code);
+        return error_code;
+    }
+    printf("Generating random bytes test succeeded!\n");
+
+    printf("\n*******************************************\n");
+    printf("Test SHA-384 Hash DRBG without prediction resistance:\n");
+    if ( error_code = test_sha384_hash_drbg_without_prediction_resistance() )
+    {
+        printf("Generating random bytes test failed!\n");
+        printf("Error code: 0x%x", error_code);
+        return error_code;
+    }
+    printf("Generating random bytes test succeeded!\n");
+
+    printf("\n*******************************************\n");
+    printf("Test SHA-384 Hash DRBG with prediction resistance:\n");
+    if ( error_code = test_sha384_hash_drbg_with_prediction_resistance() )
     {
         printf("Generating random bytes test failed!\n");
         printf("Error code: 0x%x", error_code);

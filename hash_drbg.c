@@ -146,10 +146,20 @@ int hash_drbg_instantiate(const EVP_MD *md,
     hash_output_len = EVP_MD_size(md);
     switch (hash_output_len)
     {
+        case 28:
+            drbg_ctx->hash_output_len = 28;
+            drbg_ctx->seed_byte_len = 55;
+            drbg_ctx->security_strength = 14;
+            break;
         case 32:
             drbg_ctx->hash_output_len = 32;
             drbg_ctx->seed_byte_len = 55;
             drbg_ctx->security_strength = 16;
+            break;
+        case 48:
+            drbg_ctx->hash_output_len = 48;
+            drbg_ctx->seed_byte_len = 111;
+            drbg_ctx->security_strength = 24;
             break;
         case 64:
             drbg_ctx->hash_output_len = 64;
